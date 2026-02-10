@@ -1,0 +1,202 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f2f4;
+    font-family: "Helvetica", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+.container .left img {
+    width: 320px;
+    margin: -28px;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    max-width: 1060px;
+    margin-inline: auto;
+    padding: 0 40px;
+    gap: 80px;
+}
+.container .left {
+    margin-top: -120px;
+}
+
+
+.container .left h2 {
+    font-weight: normal;
+    font-size: 24px;
+    margin-top: 16px;
+    line-height: 1.30;
+}
+
+.container .right {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.form-container {
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+form input {
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid #dddfe2;
+    font-family: "Helvetica", sans-serif;
+}
+
+form input:focus::placeholder {
+    color: #a9a9a9;
+}
+
+form input:focus {
+    outline: 1px solid #1877f2;
+}
+
+form a {
+    font-size: 14px;
+    padding: 8px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dddfe2;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.btn.green {
+  font-size: 18px;
+  background: #42b72a;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  transition: all 300ms ease;
+}
+
+button {
+    background: #1877f2;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.right p {
+    font-size: 16px;
+}
+
+.right p a {
+    color: #000000;
+
+}
+
+.right p a:hover {
+    text-decoration: underline;
+}
+
+/*a little left footer*/
+.footer-langs {
+    margin: 0 auto;
+    padding: 10px 260px 20px 300px;
+    background-color: #ffffff;
+    line-height: 20px;
+}
+
+footer ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 8px 0;
+
+    margin-left: 3vh;
+}
+
+footer ol:first-child {
+    border-bottom: 1px solid #dddfe2;
+}
+
+footer ol:first-child li:last-child button {
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    outline: none;
+    color: #4b4f56;
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+footer ol li {
+    padding-right: 20px;
+    font-size: 12px;
+    color: #8a8d91;
+}
+
+footer ol li a {
+    text-decoration: none;
+    color: #8a8d91;
+}
+
+footer ol li a:hover {
+    text-decoration: underline;
+}
+
+footer small {
+    font-size: 12px;
+    color: #8a8d91;
+    margin-left: 3vh;
+}
+
+
+/*This is for in case we are using a phone or smth with width <900*/
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        width: 400px;
+        line-height: 1.2;
+    }
+    
+    .container .left {
+        margin-top: 40px;
+    }
+
+    footer {
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /*link colors*/
+            a:link {
+                color:green;
+                background-color:transparent;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: pink;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color:red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            a:active {
+                color:yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools</a>
+
+        <h2>Absolute links:</h2>
+        <p><a href="https://www.w3.org">W3C</a></p>
+        <p><a href="https://www.google.com">Google</a></p>
+
+
+        <h2>relative links:</h2> <!--for local links within the same website-->
+        <p><a href="html_images.asp">HTML Images</a></p>
+        <p><a href="/css/default.asp">CSS tutorial</a></p>
+
+        <!--using image as a link-->
+        <a href="default.asp"><img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyazF0MmNseDlrNGt5Mm9nbHJlM2
+            t5cGxqeDZ1OXZ6YXFiamJjcnN5aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/hpEjtJ7gTyuC9BbKvl/200.gif" 
+            alt="HTML tutorial" style="width:42px;height:42px"></a> <br>
+
+
+        <!--link to an email address-->
+        <a href="mailto:louay@gmail.com">Send email</a> <br>
+
+        <!--button as a link-->
+        <button onclick="document.location='default.asp'">HTML tutorial</button> <br>
+
+        <!--link titles-->
+        <a href="https://www.w3schools.com/html/" title="Go to W3Schools html section">Visit our HTML tutorial</a>
+                    
+    </body>
+</html>
