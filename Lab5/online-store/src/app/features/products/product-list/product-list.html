@@ -1,0 +1,11 @@
+<section class="grid" *ngIf="visibleProducts.length > 0; else empty">
+  <app-product-item
+    *ngFor="let p of visibleProducts"
+    [product]="p"
+    (delete)="onDelete($event)">
+  </app-product-item>
+</section>
+
+<ng-template #empty>
+  <p>No products in this category.</p>
+</ng-template>

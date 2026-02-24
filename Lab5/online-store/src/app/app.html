@@ -1,0 +1,19 @@
+<div class="cats">
+  <button
+    *ngFor="let c of categories"
+    (click)="selectCategory(c.id)"
+    [class.active]="selectedCategoryId === c.id">
+    {{ c.name }}
+  </button>
+
+  <button (click)="clearCategory()">Clear</button>
+</div>
+
+<div *ngIf="selectedCategoryId === null">
+  Select a category to see products.
+</div>
+
+<app-product-list
+  *ngIf="selectedCategoryId !== null"
+  [products]="selectedProducts">
+</app-product-list>
