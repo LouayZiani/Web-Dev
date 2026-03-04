@@ -1,0 +1,38 @@
+@if (loading()) {
+  <p>Loading...</p>
+}
+
+@if (success()) {
+  <p class="success">
+    {{ success() }}
+  </p>
+}
+
+@if (error()) {
+  <p class="error">{{ error() }}</p>
+}
+
+@if (!loading() && album()) {
+  <div>
+    <h1>Album #{{ album()!.id }}</h1>
+    <p><b>User:</b> {{ album()!.userId }}</p>
+
+    <label>
+      <b>Title:</b>
+      <input
+        [ngModel]="title11()"
+        (ngModelChange)="title11.set($event)"
+      />
+    </label>
+
+    <div class="actions">
+      <button (click)="save()">Save</button>
+
+      <a [routerLink]="['/albums', album()!.id, 'photos']">
+        View Photos
+      </a>
+
+      <button (click)="backToAlbums()">Back</button>
+    </div>
+  </div>
+}

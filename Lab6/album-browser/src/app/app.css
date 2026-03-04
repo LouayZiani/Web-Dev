@@ -1,0 +1,20 @@
+.navigation {
+  display: flex;
+  gap: 20px;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navigation a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.container {
+  padding: 16px;
+}
