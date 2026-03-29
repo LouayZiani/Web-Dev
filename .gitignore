@@ -1,6 +1,0 @@
-
-venv/
-shopvenv/
-__pycache__/
-*.pyc
-db.sqlite3
